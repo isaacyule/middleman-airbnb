@@ -1,1 +1,20 @@
-<h2 class="text-center">The team</h2>
+<div id="team">
+  <div class="team-content">
+    <h1> The Team</h1>
+    <ul class="list-inline">
+      <% data.team.each do |team_member| %>
+        <li .team_member>
+          <%= image_tag "images/#{team_member.github_nickname}.jpg", class: "img-circle" %>
+          <h3><%= team_member.name %></h3>
+          <% link_to "https://github.com/#{team_member.github_nickname}" "_black" do %>
+            <p> <%= team_member.name %></p>
+          <% end %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
+
+
+
+
