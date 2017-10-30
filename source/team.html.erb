@@ -6,7 +6,7 @@
         <li .team_member>
           <%= image_tag "images/#{team_member.github_nickname}.jpg", class: "img-circle" %>
           <h3><%= team_member.name %></h3>
-          <% link_to "https://github.com/#{team_member.github_nickname}" "_black" do %>
+          <% link_to "https://github.com/#{team_member.github_nickname}" do %>
             <p> <%= team_member.name %></p>
           <% end %>
         </li>
