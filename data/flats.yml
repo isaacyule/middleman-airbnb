@@ -1,0 +1,24 @@
+isaacyule:
+  name: "Isaac Yule"
+  description: "Spacious studio flat"
+  city_name: "London, UK"
+  city_slug: "london"
+  bedrooms:
+  wifi: true
+  rating: 5
+bradpittpitty:
+  name: "Brad Pitt"
+  description: "Huge estate in Los Angeles"
+  city_name: "Los Angeles, California"
+  city_slug: "la"
+  bedrooms: 8
+  wifi: false
+  rating: 2
+monsieurpaillard:
+  name: "Romain Paillard"
+  description: Nice flat in Piccadilly
+  city_name: "London, UK"
+  city_slug: "london"
+  bedrooms: 3
+  wifi: true
+  rating: 5
