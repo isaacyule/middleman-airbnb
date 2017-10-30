@@ -7,18 +7,97 @@
 <div id="flat">
   <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%), url('../images/<%= flat.city_slug %>.jpg');">
   </div>
-</div>
 
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12">
-      <div class="flat-info">
-        <%= image_tag "../images/#{owner}.jpg", class: "avatar" %>
-        <p><%= flat.name %></p>
-        <p><%= flat.city_name %></p>
-        <h1><%= flat.description %></h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="flat-content">
+          <div class="flat-owner">
+            <%= image_tag "../images/#{owner}.jpg", class: "avatar" %>
+            <p><%= flat.name %></p>
+          </div>
+          <div class="flat-details">
+           <h3><%= flat.description %></h3>
+            <p><%= flat.city_name %></p>
+            <p>Rating: <%= flat.rating %></p>
+          </div>
+          <form class="booking">
+            <h4>Booking</h4>
+            <div class="row">
+              <div class="col-xs-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="checkin" placeholder="Check In">
+                </div>
+              </div>
+              <div class="col-xs-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="checkout" placeholder="Check Out">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="guest" placeholder="Number of guests">
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
       </div>
     </div>
   </div>
+  <div id="flat-description">
+ <div class="container">
+   <div class="row">
+     <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+       <h2>About this flat</h2>
+       <p>
+         This one bedroom studio lodges 2 people (there's 1 double bed) it is located in the city center, in a calm traditional residential area near city´s main Avenue - 3 minutes walk from Sacré Coeur.
+       </p>
+       <hr>
+       <div class="row" id="flat-data">
+         <div class="col-xs-12 col-sm-2">
+           The Space
+         </div>
+         <div class="col-xs-12 col-sm-4">
+           <ul class="list-unstyled">
+             <li>Accommodates:  <strong>2</strong></li>
+             <li>Bathrooms:  <strong>1</strong></li>
+             <li>Bed type:  <strong>Real Bed</strong></li>
+             <li>Bedrooms:  <strong>1</strong></li>
+           </ul>
+         </div>
+         <div class="col-xs-12 col-sm-4">
+           <ul class="list-unstyled">
+             <li>Beds: <strong>1</strong></li>
+             <li>Property type: <strong>Apartment</strong></li>
+             <li>Room type: <strong>Entire home/apt</strong></li>
+           </ul>
+         </div>
+       </div>
+       <hr>
+       <div class="row" id="flat-data">
+         <div class="col-xs-12 col-sm-2">
+           Amenities
+         </div>
+         <div class="col-xs-12 col-sm-4">
+           <ul class="list-unstyled">
+             <li><i class="fa fa-cutlery"></i><strong>Kitchen</strong></li>
+             <li><i class="fa fa-wifi"></i><strong>Wifi</strong></li>
+           </ul>
+         </div>
+         <div class="col-xs-12 col-sm-4">
+           <ul class="list-unstyled">
+             <li><i class="fa fa-desktop"></i><strong>TV</strong></li>
+             <li><i class="fa fa-glass"></i><strong>Welcome drink</strong></li>
+           </ul>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
 </div>
 
